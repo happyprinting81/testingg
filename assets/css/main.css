@@ -912,6 +912,7 @@ section,
 .about .content {
   background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
   padding: 40px;
+  border-radius: 50px;
 }
 
 .about .content h3 {
@@ -1831,8 +1832,9 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  background: color-mix(in srgb, var(--default-color), transparent 95%);
   padding: 30px;
+  border-radius: 50px;
 }
 
 .contact .info-item i {
@@ -1855,9 +1857,10 @@ section,
 }
 
 .contact .php-email-form {
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  background: color-mix(in srgb, var(--default-color), transparent 95%);
   padding: 30px;
   height: 100%;
+  border-radius: 50px;
 }
 
 .contact .php-email-form input[type=text],
