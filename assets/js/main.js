@@ -127,9 +127,7 @@
 
   });
 
-  /**
-   * Init swiper sliders
-   */
+ 
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
       let config = JSON.parse(
