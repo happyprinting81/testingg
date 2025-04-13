@@ -1000,26 +1000,25 @@
             
             <script>
               document.getElementById("whatsapp-form").addEventListener("submit", function(event) {
-                event.preventDefault(); // Mencegah form dari pengiriman tradisional
-                
-                // Ambil nilai inputan form
+                event.preventDefault();
+            
                 var name = document.getElementById("name").value;
                 var email = document.getElementById("email").value;
                 var subject = document.getElementById("subject").value;
                 var message = document.getElementById("message").value;
             
-                // Membuat pesan yang akan dikirim ke WhatsApp
                 var whatsappMessage = encodeURIComponent(
                   "Nama: " + name + "\n" +
                   "Email: " + email + "\n" +
                   "Subject: " + subject + "\n" +
                   "Pesan: " + message
                 );
-          
-                // Membuat URL WhatsApp dengan pesan yang telah disusun
-                var whatsappURL = "https://wa.me/+6285396874100?text=" + whatsappMessage;
             
-                // Redirect ke WhatsApp
+                // Tampilkan notifikasi sebelum redirect
+                alert("Pesan Anda siap dikirim. Anda akan dialihkan ke WhatsApp.");
+            
+                // Arahkan ke WhatsApp
+                var whatsappURL = "https://wa.me/+6285396874100?text=" + whatsappMessage;
                 window.location.href = whatsappURL;
               });
             </script>
